@@ -41,6 +41,7 @@
 
                 <div class="links">
                     <a href="/about">About</a>
+                    <a href="/articles">Articles</a>
                     <a href="https://hexlet.io">Hexlet</a>
                 </div>
             </div>

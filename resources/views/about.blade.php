@@ -36,8 +36,9 @@
     <div class="content">
         <h1>О блоге</h1>
         <p>Эксперименты с Laravel на Хекслете</p>
-
+            <em>{{$body['content']}}</em>
             <a href="/about">About</a>
+            <a href="/articles">Articles</a>
             <a href="https://hexlet.io">Hexlet</a>
         </div>
     </div>
