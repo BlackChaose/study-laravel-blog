@@ -1,0 +1,28 @@
+[30;41;1mErrorException with message 'Unparenthesized `a ? b : c ? d : e` is deprecated. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`'[39;49;22m
+[30;41;1mErrorException with message 'Unparenthesized `a ? b : c ? d : e` is deprecated. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`'[39;49;22m
+[30;41;1mSymfony/Component/Console/Exception/RuntimeException with message 'Not enough arguments (missing: "target").'[39;49;22m
+[30;41;1mInvalidArgumentException with message 'Unknown class or function: doc'[39;49;22m
+[30;41;1mErrorException with message 'Unparenthesized `a ? b : c ? d : e` is deprecated. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`'[39;49;22m
+[34m0[39m: show last
+[34m1[39m: history
+[34m2[39m: doc head
+[34m3[39m: doc last
+[34m4[39m: doc
+[34m5[39m: doc doc
+[34m6[39m: doc head
+[30;43mPHP Warning:  Use of undefined constant hw - assumed 'hw' (this will throw an Error in a future version of PHP) in /home/nik/DEV/my/hexlet-laravel-blog/hexlet-laravel-blogeval()'d code on line 1[39;49m
+[30;41;1mPHP Parse error: Syntax error, unexpected T_STRING on line 1[39;49;22m
+[30;43mPHP Warning:  Use of undefined constant hwhed - assumed 'hwhed' (this will throw an Error in a future version of PHP) in /home/nik/DEV/my/hexlet-laravel-blog/hexlet-laravel-blogeval()'d code on line 1[39;49m
+[30;43mPHP Warning:  Use of undefined constant isto - assumed 'isto' (this will throw an Error in a future version of PHP) in /home/nik/DEV/my/hexlet-laravel-blog/hexlet-laravel-blogeval()'d code on line 1[39;49m
+[34m 0[39m: show last
+[34m 1[39m: history
+[34m 2[39m: doc head
+[34m 3[39m: doc last
+[34m 4[39m: doc
+[34m 5[39m: doc doc
+[34m 6[39m: doc head
+[34m 7[39m: history
+[34m 8[39m: hw
+[34m 9[39m: hw o
+[34m10[39m: hwhed
+[34m11[39m: isto
