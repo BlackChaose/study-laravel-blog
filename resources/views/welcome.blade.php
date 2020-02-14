@@ -5,6 +5,7 @@
         <a href="/about">About</a>
         <a href="/articles">Articles</a>
         <a href="/rating">Rating</a>
+        <a href="/contacts">Contacts</a>
         <a href="https://hexlet.io">Hexlet</a>
     </div>
     @endsection

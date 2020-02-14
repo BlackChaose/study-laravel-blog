@@ -1,10 +1,4 @@
-<?php
-/**
- * User: nikita.s.kalitin@gmail.com
- * Date: 13.02.20
- * Time: 14:04
- */ ?>
-    <!doctype html>
+<!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8"/>
