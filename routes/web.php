@@ -18,3 +18,4 @@ Route::get('/about', 'PageController@about');
 Route::get('/articles', 'PageController@articles');
 Route::get('/rating', 'Rating@index');
 Route::get('/contacts','Rating@getmail');
+Route::get('/article_categories','ArtcileCategoryContoroller@index')->name('article_categories.index');

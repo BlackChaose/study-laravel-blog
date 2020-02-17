@@ -7,5 +7,6 @@
         <a href="/rating">Rating</a>
         <a href="/contacts">Contacts</a>
         <a href="https://hexlet.io">Hexlet</a>
+        <a href="{{route('article_categories.index')}}">Категории статей</a>
     </div>
     @endsection
