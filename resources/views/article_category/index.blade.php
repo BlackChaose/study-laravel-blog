@@ -13,5 +13,4 @@
             </tr>
         @endforeach
     </table>
-    {{$articles->links()}}
 @endsection
