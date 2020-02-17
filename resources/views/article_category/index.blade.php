@@ -1,4 +1,4 @@
-@extends('layouts.app)
+@extends('layouts.app')
 @section('content')
     <table style="border: 1px solid green; text-align: left;">
         <caption>Категории статей</caption>
@@ -12,5 +12,6 @@
                 <td>{{$el['body']}}</td>
             </tr>
         @endforeach
-        <table>
+    </table>
+    {{$articles->links()}}
 @endsection
