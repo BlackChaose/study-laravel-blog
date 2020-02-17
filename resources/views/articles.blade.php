@@ -18,7 +18,7 @@
         </tr>
         @foreach($arts as $el)
             <tr>
-                <td>{{$el['name']}}</td>
+                <td><a title="view article" href="{{route('article.show',[$el['id']])}}">{{$el['name']}}</a></td>
                 <td>{{$el['body']}}</td>
                 <td>{{$el['state']}}</td>
                 <td>{{$el['likes']}}</td>

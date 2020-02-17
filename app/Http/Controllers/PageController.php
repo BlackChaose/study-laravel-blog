@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
-    //fixme: see lessonController!!!
     public function about(){
         $body = ['content'=>'lorem ipsum dolores sit amet!'];
         return view('about',['body'=>$body]);
@@ -14,5 +13,9 @@ class PageController extends Controller
     public function articles(){
         $arts = \App\Article::all();
         return view('articles', ['arts'=>$arts]);
+    }
+    public function show($id){
+        $article = \App\Article::findOrFail($id);
+        return view('article.show', compact('article'));
     }
 }
