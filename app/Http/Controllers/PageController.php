@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Article;
+
 class PageController extends Controller
 {
     public function about()
@@ -31,4 +32,26 @@ class PageController extends Controller
         //dd($q, $articles);
         return view('articles', compact('arts', 'q'));
     }
+
+    public function create()
+    {
+        $article = new Article();
+        return view('article.create', compact('article'));
+    }
+
+    public function store(Request $req)
+    {
+            $this->validate($req, [
+                'name' => 'required|unique:articles',
+                'body' => 'required|min:1000',
+            ]);
+
+        $article = new Article();
+        $article->fill($req->all());
+        $article->save();
+        $req->session()->flash('status', 'art stored!');
+        return redirect()
+            ->route('articles.index');
+    }
+
 }

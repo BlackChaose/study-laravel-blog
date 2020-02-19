@@ -1,5 +1,8 @@
 @extends('layouts.app')
 @section('content')
+    {{-- BEGIN --}}
+    <small><a href="{{ route('article_categories.create') }}">Создать категорию</a></small>
+    {{-- END --}}
     <table style="border: 1px solid green; text-align: left;">
         <caption>Категории статей</caption>
         <tr>

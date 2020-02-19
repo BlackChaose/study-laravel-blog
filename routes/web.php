@@ -19,5 +19,13 @@ Route::get('/articles', 'PageController@articles');
 Route::get('/rating', 'Rating@index');
 Route::get('/contacts','Rating@getmail');
 Route::get('/article_categories','ArticleCategoryController@index')->name('article_categories.index');
+Route::get('/articles/create','PageController@create')->name('articles.create');
+Route::post('/articles','PageController@store')->name('articles.store');
 Route::get('/articles/{id}', 'PageController@show')->name('article.show');
 Route::get('/index', 'PageController@index')->name('articles.index');
+
+Route::get('/article_categories/create', 'ArticleCategoryController@create')
+    ->name('article_categories.create');
+
+Route::post('/article_categories', 'ArticleCategoryController@store')
+    ->name('article_categories.store');
