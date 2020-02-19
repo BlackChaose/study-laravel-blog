@@ -2,7 +2,7 @@
 @section('content')
     {{-- BEGIN --}}
     @if ($errors->any())
-        <div>
+        <div class="alert alert-danger">
             <ul>
                 @foreach ($errors->all() as $error)
                     <li>{{ $error }}</li>
@@ -10,7 +10,7 @@
             </ul>
         </div>
     @endif
-    {{ Form::model($article, ['url' => route('articles.create')]) }}
+    {{ Form::model($article, ['url' => route('article.update', $article), 'method' => 'PATCH']) }}
     @include('article.form')
     {{ Form::submit('Обновить') }}
     {{ Form::close() }}

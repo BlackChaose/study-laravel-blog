@@ -30,6 +30,7 @@
                 <td>{{$el['likes']}}</td>
                 <td>{{$el['created_at']}}</td>
                 <td>{{$el['updated_at']}}</td>
+                <td><small><a href="{{route('article.edit',$el['id'])}}">edit</a></small></td>
             </tr>
         @endforeach
     </table>

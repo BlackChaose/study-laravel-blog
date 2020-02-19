@@ -21,6 +21,13 @@ Route::get('/contacts','Rating@getmail');
 Route::get('/article_categories','ArticleCategoryController@index')->name('article_categories.index');
 Route::get('/articles/create','PageController@create')->name('articles.create');
 Route::post('/articles','PageController@store')->name('articles.store');
+
+Route::get('/articles/{id}/edit','PageController@edit')
+    ->name('article.edit');
+// Метод PATCH
+Route::patch('/articles/{id}', 'PageController@update')
+    ->name('article.update');
+
 Route::get('/articles/{id}', 'PageController@show')->name('article.show');
 Route::get('/index', 'PageController@index')->name('articles.index');
 
@@ -29,3 +36,4 @@ Route::get('/article_categories/create', 'ArticleCategoryController@create')
 
 Route::post('/article_categories', 'ArticleCategoryController@store')
     ->name('article_categories.store');
+
