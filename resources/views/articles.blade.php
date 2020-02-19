@@ -7,6 +7,12 @@
 @extends('layouts.app')
 @section('header','статьи')
 @section('content')
+    {{-- BEGIN (write your solution here) --}}
+    {{Form::open(['url' => route('articles.index'), 'method' => 'GET'])}}
+    {{Form::text('q', $q ?? '')}}
+    {{Form::submit('push me!')}}
+    {{Form::close()}}
+    {{-- END --}}
     <table>
         <tr>
             <th>name</th>

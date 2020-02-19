@@ -20,3 +20,4 @@ Route::get('/rating', 'Rating@index');
 Route::get('/contacts','Rating@getmail');
 Route::get('/article_categories','ArticleCategoryController@index')->name('article_categories.index');
 Route::get('/articles/{id}', 'PageController@show')->name('article.show');
+Route::get('/index', 'PageController@index')->name('articles.index');
