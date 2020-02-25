@@ -72,4 +72,10 @@ class PageController extends Controller
         return view('article.edit', compact('article'));
     }
 
+    public function delete(Request $req, $id){
+        $article = Article::findOrFail($id);
+        $article->delete();
+        return redirect()
+            ->route('articles.index');
+    }
 }

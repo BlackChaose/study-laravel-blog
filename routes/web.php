@@ -27,7 +27,10 @@ Route::get('/articles/{id}/edit','PageController@edit')
 // Метод PATCH
 Route::patch('/articles/{id}', 'PageController@update')
     ->name('article.update');
-
+// Метод DELETE
+Route::delete('/articles/{id}','PageController@delete')
+    ->name('article.delete');
+//
 Route::get('/articles/{id}', 'PageController@show')->name('article.show');
 Route::get('/index', 'PageController@index')->name('articles.index');
 
@@ -36,4 +39,5 @@ Route::get('/article_categories/create', 'ArticleCategoryController@create')
 
 Route::post('/article_categories', 'ArticleCategoryController@store')
     ->name('article_categories.store');
+
 

@@ -31,6 +31,7 @@
                 <td>{{$el['created_at']}}</td>
                 <td>{{$el['updated_at']}}</td>
                 <td><small><a href="{{route('article.edit',$el['id'])}}">edit</a></small></td>
+                <td><small><a href="{{route('article.delete', $el['id'])}}" data-method="delete" rel="nofollow">Delete</a></small></td>
             </tr>
         @endforeach
     </table>
