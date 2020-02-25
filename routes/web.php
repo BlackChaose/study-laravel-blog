@@ -41,3 +41,4 @@ Route::post('/article_categories', 'ArticleCategoryController@store')
     ->name('article_categories.store');
 
 
+Route::resource('/books','BooksController');

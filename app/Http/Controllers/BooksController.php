@@ -5,6 +5,19 @@ namespace App\Http\Controllers;
 use App\Books;
 use Illuminate\Http\Request;
 
+/**
+ * Class BooksController
+ *
+ * @package App\Http\Controllers
+ */
+
+/*TODO: Удалите все маршруты связанные со статьями
+*TODO:  Удалите контроллер статей (шаблоны оставьте)
+*TODO:  Добавьте ресурсную маршрутизация articles
+*TODO:  Сгенерируйте для него контроллер ArticleController
+*TODO:  Реализуйте CRUD
+ *  */
+
 class BooksController extends Controller
 {
     /**
@@ -14,7 +27,8 @@ class BooksController extends Controller
      */
     public function index()
     {
-        //
+        $books= \App\Books::all();
+        return view('books.index', ['books' => $books]);
     }
 
     /**
