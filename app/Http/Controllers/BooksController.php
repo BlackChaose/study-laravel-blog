@@ -16,6 +16,7 @@ use Illuminate\Http\Request;
 *TODO:  Добавьте ресурсную маршрутизация articles
 *TODO:  Сгенерируйте для него контроллер ArticleController
 *TODO:  Реализуйте CRUD
+*TODO:  доделай упр. в веб. кабинете
  *  */
 
 class BooksController extends Controller
