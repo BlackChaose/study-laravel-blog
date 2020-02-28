@@ -11,6 +11,6 @@
     @endif
     {{ Form::model($books, ['url' => route('books.create')]) }}
     @include('books.form')
-    {{ Form::submit('Обновить') }}
+    {{ Form::submit('Создать') }}
     {{ Form::close() }}
 @endsection
