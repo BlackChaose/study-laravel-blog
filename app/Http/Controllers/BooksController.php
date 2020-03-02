@@ -17,6 +17,7 @@ use Illuminate\Http\Request;
 *TODO:  Сгенерируйте для него контроллер ArticleController
 *TODO:  Реализуйте CRUD
 *TODO:  доделай упр. в веб. кабинете
+ * TODO: up! 2020/03 !! + ORM Eloquent
  *  */
 
 class BooksController extends Controller
