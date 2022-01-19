@@ -1,5 +1,6 @@
 ### This study repository for learning Laravel ### 
 
+*for me: see [http://hexlet.io](http://hexlet.io)
 
 ---
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
